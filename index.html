@@ -1,194 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Field Solutions - Auditoria de Fibra</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Inter, Arial, sans-serif;
-            background: #ffffff;
-            color: #0a0a0a;
-        }
-        header {
-            padding: 40px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: auto;
-        }
-        header h1 {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-        header p {
-            font-size: 22px;
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.5;
-        }
-        .cta-buttons {
-            margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .btn-primary {
-            background: #1e90ff;
-            color: white;
-            padding: 15px 28px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 600;
-        }
-        .btn-secondary {
-            border: 2px solid #1e90ff;
-            color: #1e90ff;
-            padding: 15px 28px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 600;
-        }
-        section {
-            padding: 60px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-        h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .list {
-            font-size: 20px;
-            line-height: 1.7;
-            max-width: 700px;
-            margin: auto;
-        }
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin-top: 40px;
-        }
-        .card {
-            padding: 28px;
-            border: 1px solid #e5e5e5;
-            border-radius: 12px;
-            background: #fafafa;
-            font-size: 18px;
-        }
-        .form-container {
-            border: 1px solid #e5e5e5;
-            border-radius: 12px;
-            background: #ffffff;
-            padding: 40px;
-            max-width: 650px;
-            margin: auto;
-        }
-        .form-container input,
-        .form-container button,
-        .form-container label {
-            width: 100%;
-            margin-bottom: 18px;
-            font-size: 18px;
-        }
-        .form-container input {
-            padding: 14px;
-            border-radius: 8px;
-            border: 1px solid #cccccc;
-        }
-        .form-container button {
-            padding: 16px;
-            background: #1e90ff;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 20px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        footer {
-            margin-top: 60px;
-            padding: 40px 20px;
-            background: #f4f4f4;
-            text-align: center;
-            font-size: 16px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Field Solutions - IA para Fibra Óptica</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-<header>
-    <h1>A forma mais rápida e precisa de auditar construção de fibra óptica</h1>
-    <p>Envie seus mapas e fotos. Nós entregamos auditoria, as-built e faturamento correto com precisão profissional.</p>
-    <div class="cta-buttons">
-        <a href="#form" class="btn-primary">Quero testar com minha empresa</a>
-        <a href="#exemplo" class="btn-secondary">Ver exemplo de relatório</a>
-    </div>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">Field Solutions</div>
+    <nav>
+        <a href="#solucao">Solução</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#contato" class="btn-nav">Contato</a>
+    </nav>
 </header>
 
-<section>
-    <h2>Sua empresa de fibra está perdendo dinheiro sem perceber.</h2>
-    <div class="list">
-        • fotos desorganizadas<br>
-        • supervisão limitada<br>
-        • construção divergente do mapa<br>
-        • billing incorreto<br>
-        • as-built atrasado<br>
-        • perda financeira invisível<br>
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="overlay"></div>
+    <img class="hero-bg" src="Gemini_Generated_Image_7b1o0i7b1o0i7b1o.png" alt="Lineman">
+
+    <div class="hero-content">
+        <h1>Economia, Produtividade e Precisão. Sua Operação de Fibra Otimizada por IA.</h1>
+        <p>Reduza desperdício, elimine retrabalho e receba relatórios automáticos em minutos. 
+        Acompanhe produção, divergências, faturamento e performance do time em tempo real.</p>
+
+        <a href="#contato" class="btn-primary">Quero testar minha operação</a>
     </div>
 </section>
 
-<section>
-    <h2>Auditoria completa e faturamento correto em poucos cliques.</h2>
+<!-- SOLUÇÃO -->
+<section id="solucao" class="section-light">
+    <h2>Solução completa para sua operação de fibra</h2>
+
     <div class="cards">
-        <div class="card"><strong>Auditoria Automática</strong><br>Seu mapa e fotos são organizados e analisados.</div>
-        <div class="card"><strong>Relatório Profissional</strong><br>Divergências, erros e recomendações.</div>
-        <div class="card"><strong>Faturamento Correto</strong><br>Mostramos quanto você perdeu e deveria faturar.</div>
-    </div>
-    <div class="cta-buttons" style="margin-top: 40px;">
-        <a href="#form" class="btn-primary">Gerar Auditoria Grátis</a>
-    </div>
-</section>
+        <div class="card glass">
+            <h3>Auditoria Inteligente</h3>
+            <p>IA confere fotos, spans, postes e divergências com precisão profissional.</p>
+        </div>
 
-<section>
-    <h2>Solicitar Auditoria Grátis</h2>
-    <div class="form-container" id="form">
-        <label>Empresa</label>
-        <input type="text" placeholder="Nome da empresa" />
+        <div class="card glass">
+            <h3>Relatórios Automáticos</h3>
+            <p>Receba relatórios em minutos com insights claros e acionáveis.</p>
+        </div>
 
-        <label>Responsável</label>
-        <input type="text" placeholder="Seu nome" />
-
-        <label>Telefone</label>
-        <input type="text" placeholder="(XX) XXXXX-XXXX" />
-
-        <label>Email</label>
-        <input type="email" placeholder="seuemail@empresa.com" />
-
-        <label>Upload do mapa PDF</label>
-        <input type="file" accept="application/pdf" />
-
-        <label>Upload das fotos</label>
-        <input type="file" accept="image/*" multiple />
-
-        <button>Enviar Auditoria</button>
+        <div class="card glass">
+            <h3>Faturamento Preciso</h3>
+            <p>Identifique perdas, corrige billing e garanta o valor correto por rota.</p>
+        </div>
     </div>
 </section>
 
-<section id="exemplo">
-    <h2>Exemplo de Relatório</h2>
-    <p style="text-align:center; font-size:18px;">(Insira aqui um PDF quando tiver o modelo.)</p>
+<!-- BENEFÍCIOS -->
+<section id="beneficios" class="section-dark">
+    <h2>Por que Field Solutions?</h2>
+
+    <div class="benefits">
+        <div class="benefit-item fade-in">
+            <h3>Economia Imediata</h3>
+            <p>Elimine perdas financeiras por erros invisíveis e inconsistências de produção.</p>
+        </div>
+
+        <div class="benefit-item fade-in">
+            <h3>Precisão Acima de 98 por cento</h3>
+            <p>IA confere spans, hardware e divergências com assertividade superior.</p>
+        </div>
+
+        <div class="benefit-item fade-in">
+            <h3>Supervisão Inteligente</h3>
+            <p>Controle total da operação com análises automáticas em tempo real.</p>
+        </div>
+    </div>
 </section>
 
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="section-light">
+    <h2>Como funciona</h2>
+
+    <div class="steps">
+        <div class="step">
+            <span>1</span>
+            <p>Envie fotos e mapa da rota</p>
+        </div>
+
+        <div class="step">
+            <span>2</span>
+            <p>IA analisa divergências e produção</p>
+        </div>
+
+        <div class="step">
+            <span>3</span>
+            <p>Receba relatório e faturamento preciso</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="section-dark">
+    <h2>Solicite sua Auditoria</h2>
+
+    <form class="form">
+        <input type="text" placeholder="Nome da empresa">
+        <input type="text" placeholder="Responsável">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Mensagem (opcional)"></textarea>
+        <button class="btn-primary">Enviar</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    Field Solutions — Auditoria, Supervisão e Faturamento Inteligente<br>
-    Contato: info@fieldsolutions.ai
+    Field Solutions © 2025 — IA para Supervisão e Auditoria de Fibra Óptica
 </footer>
 
 </body>
